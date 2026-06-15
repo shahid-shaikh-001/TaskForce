@@ -23,6 +23,6 @@ app.set("io", io);
 
 registerTaskSocket(io);
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`TaskForge backend running on port ${PORT}`);
 });
